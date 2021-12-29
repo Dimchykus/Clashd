@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(./fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Raleway;
+  src: url(./fonts/Relaway/Raleway-VariableFont_wght.ttf);
+}
+.header {
+  padding-top: 20px;
+  padding-left: 150px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column;
+  width: 100%;
+  z-index: 2;
+}
+.title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #121212;
+  margin: 0;
+}
+.description {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 200%;
+  color: #121212;
+}
+.copyright {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 180%;
+  color: #606674;
+}
+.mainImage {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 870px;
+}
+.figure1 {
+  position: absolute;
+  right: 40%;
+  top: 0px;
+  z-index: -1;
+}
+.figure2 {
+  position: absolute;
+  right: 35%;
+  bottom: 0;
+  z-index: -1;
+}
