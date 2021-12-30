@@ -36,7 +36,11 @@ header {
   flex-flow: row;
   justify-content: space-between;
   box-sizing: border-box;
-  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1920px;
+  gap: 0px 20px;
+  z-index: -1;
 }
 .image {
   z-index: 2;
@@ -60,7 +64,7 @@ header {
   align-items: center;
   margin-top: 100px;
 }
-.text1 {
+.title-desc {
   margin: auto;
 }
 .title {
@@ -104,9 +108,6 @@ header {
   bottom: 0px;
   z-index: 1;
 }
-.header-mobile-img {
-  display: none;
-}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   header {
     padding: 0px 75px;
@@ -120,8 +121,12 @@ header {
   header {
     position: relative;
     padding: 4px 0px;
-    display: flex;
-    justify-content: center;
+  }
+  .header-img {
+    margin: 0 auto;
+    width: 115px;
+    height: 46px;
+    display: block;
   }
   .main {
     position: relative;
@@ -129,12 +134,13 @@ header {
   .content {
     flex-direction: column-reverse;
     height: auto;
+    gap: 0px;
   }
   .text {
     margin: 0px;
     align-self: center;
   }
-  .text1 {
+  .title-desc {
     margin: 30px 24px;
   }
   .description {
@@ -163,12 +169,6 @@ header {
     font-weight: normal;
     font-size: 30px;
     line-height: 140%;
-  }
-  .header-img {
-    display: none;
-  }
-  .header-mobile-img {
-    display: block;
   }
   .figure1 {
     top: 60%;
