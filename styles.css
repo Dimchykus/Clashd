@@ -3,7 +3,11 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  position: relative;
+  display: flex;
+  flex-flow: column;
+  flex: 0 1 auto;
+  flex: 1 1 auto;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -17,14 +21,16 @@ body {
 .header {
   padding-top: 20px;
   padding-left: 150px;
+  flex: 0 1 auto;
 }
 .main {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-flow: column;
-  width: 100%;
   z-index: 2;
+  flex: 1 1 auto;
+  margin-left: 181px;
 }
 .title {
   font-family: Raleway;
@@ -34,7 +40,7 @@ body {
   line-height: 140%;
   text-transform: uppercase;
   color: #121212;
-  margin: 0;
+  max-width: 460px;
 }
 .description {
   font-family: Poppins;
@@ -43,14 +49,18 @@ body {
   font-size: 18px;
   line-height: 200%;
   color: #121212;
+  max-width: 503px;
 }
-.copyright {
+.footer {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 180%;
   color: #606674;
+  flex: 0 1 40px;
+    margin-left: 181px;
+    margin-bottom: 30px;
 }
 .mainImage {
   position: absolute;
